@@ -5,10 +5,16 @@
     <title>登录</title>
 </head>
 <body>
-<form>
-    <input type="text" placeholder="用户名"><br>
-    <input type="password" placeholder="密码"><br>
-    <input type="submit" formmethod="get">
-</form>
+<div class="container" style="width:500px">
+    <h4>用户登录</h4>
+    <div class="login-part" style="width:300px">
+        <form method="get" action="login">
+            <input type="text" placeholder="用户名" name="username" style="width:200px;height:20px;margin:10px 20px"><br>
+            <input type="password" placeholder="密码" name="password" style="width:200px;height:20px;margin:10px 20px"><br>
+            <input type="checkbox" style="width:50px;height:15px">下次自动登录
+            <input type="submit" value="登录"  style="background-color:#ff0000;width:200px;height:25px;margin:10px 20px">
+        </form>
+    </div>
+</div>
 </body>
 </html>
