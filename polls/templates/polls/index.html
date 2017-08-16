@@ -1,20 +1,38 @@
+{% load static %}
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <title>登录</title>
-</head>
-<body>
-<div class="container" style="width:500px">
-    <h4>用户登录</h4>
-    <div class="login-part" style="width:300px">
-        <form method="get" action="login">
-            <input type="text" placeholder="用户名" name="username" style="width:200px;height:20px;margin:10px 20px"><br>
-            <input type="password" placeholder="密码" name="password" style="width:200px;height:20px;margin:10px 20px"><br>
-            <input type="checkbox" style="width:50px;height:15px">下次自动登录
-            <input type="submit" value="登录"  style="background-color:#ff0000;width:200px;height:25px;margin:10px 20px">
-        </form>
-    </div>
-</div>
-</body>
+    <head>
+        <meta charset="UTF-8">
+        <title>登录</title>
+        <link rel="stylesheet" type="text/css" href="{% static "css/index.css" %}">
+    </head>
+    <body>
+        <div class="login-main">
+            <div class="top">
+                <h3>账号登录</h3>
+                <form method="get" action="login">
+                    <input class="text-input" type="text" name="username" placeholder="用户名"><br>
+
+                    <input class="text-input mgb0" type="text" name="password" placeholder="密码"><br>
+                    <div class="error-mess" id="error">
+                        <span class="error-icon"></span>
+                        <span id="error-message">账号或密码错误，请从新输入</span>
+                    </div>
+                    <div>
+                        <input type="checkbox"> <span>下次自动登录</span>
+
+                        <a href="https://www.baidu.com/">百度一下</a>
+                    </div>
+                    <button type="button" id="submit">登录</button>
+                </form>
+            </div>
+            <div class="center"></div>
+            <div class="bottom">
+                <span>第三方登陆</span>
+            </div>
+        </div>
+    </body>
+    <script src="{% static "js/index.js" %}">
+
+    </script>
 </html>

@@ -1,0 +1,65 @@
+
+.login-main {
+    width: 300px;
+    border: 1px solid rgba(220, 212, 226, 100)
+}
+
+.top {
+    padding: 10px 44px
+}
+
+.text-input {
+    background: #ffffff;
+    border: 1px solid rgba(220, 212, 226, 100);
+    border-radius: 3px;
+    width: 200px;
+    height: 20px;
+    padding: 5px;
+    margin-bottom: 20px
+}
+
+.mgb0 {
+    margin-bottom: 10px
+}
+
+input[type="checkbox"] {
+    margin-bottom: 10px
+}
+
+.top div span {
+    font-size: 12px;
+    margin-bottom: 10px
+}
+
+.top div a {
+    font-size: 12px;
+    margin-left: 65px
+}
+
+button[type="button"] {
+    background: red;
+    border: 1px solid;
+    border-radius: 3px;
+    width: 212px;
+    height: 30px;
+    display: block;
+    color: #ffffff;
+    margin-top: 10px
+}
+
+button[type="button"]:hover {
+    background: black
+}
+
+.center {
+    height: 1px;
+    background: rgba(220, 212, 226, 100);
+    margin-top: 30px
+}
+
+.error-mess {
+    color: #ff0000;
+    background: #fff0f0;
+    border: 1px solid #ffd2d2;
+    display: none;
+}
